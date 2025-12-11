@@ -65,7 +65,9 @@ export default function App() {
         <div style={{ display: "flex", gap: 16, alignItems: "flex-start", border: "1px solid #ddd", padding: 16, borderRadius: 8 }}>
           <img src={userData.avatar_url} alt={`${userData.login} avatar`} width={120} height={120} style={{ borderRadius: 8 }} />
           <div>
-            <p style={{ margin: "4px 0", color: "#555" }}>@{userData.login}</p>
+            <h2>{userData.name}</h2>
+<p>@{userData.login}</p>
+
             {userData.bio && <p style={{ marginTop: 6 }}>{userData.bio}</p>}
             <p style={{ marginTop: 8 }}>
              <b> {userData.followers} </b> <span>Followers</span> &nbsp;

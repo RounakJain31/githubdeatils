@@ -66,8 +66,9 @@ export default function App() {
           <img src={userData.avatar_url} alt={`${userData.login} avatar`} width={120} height={120} style={{ borderRadius: 8 }} />
           <div>
             <h2>{userData.name}</h2>
-<p>@{userData.login}</p>
-
+            <p>@{userData.login}</p>
+            {userData.location && (
+            <p style={{ marginTop: 4 }}>📍 {userData.location}</p>)}
             {userData.bio && <p style={{ marginTop: 6 }}>{userData.bio}</p>}
             <p style={{ marginTop: 8 }}>
              <b> {userData.followers} </b> <span>Followers</span> &nbsp;
